@@ -233,10 +233,10 @@ var fizzBuzz = function(n) {
 var countOccurrence = function(array, value) {
 	var counter;
 	if(array.length ===0) { return 0}
-	value===array[0]?1:0
+	value===array[0]?counter=1:counter=0
 	return counter + countOccurrence(array.slice(1),value);
 };
-console.log([2,7,4,4,1,4], 4)
+console.log(countOccurrence([2,7,4,4,1,4], 4))
 // 21. Write a recursive version of map.
 // rMap([1,2,3], timesTwo); // [2,4,6]
 var rMap = function(array, callback) {
